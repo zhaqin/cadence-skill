@@ -1,0 +1,131 @@
+/*选择器优先级关系*/
+/*
+     css权重关系
+
+	！important         infinity
+	 行间样式           1000
+     id                100    //256进制
+     calss|属性|伪类    10
+     标签|伪元素        1
+     通配符             0
+
+     选择器并排权重相加权重高的优先级高 权重相等后面优先
+
+*/
+
+
+
+/* 1.id选择器 优先级1（最高） 低于行间选择器
+/*# id名 只能一一对应*/
+#2 {
+	width: 100px;
+	height:100px;
+	background-repeat: 50;
+	background-color:black; 
+}
+
+ 2.class选择器 可以多对多 优先级2*/
+.demo{
+	background-color:yellow;
+}
+
+.domo1{
+	color:#f40;
+}
+
+ 3.标签选择器 对应html的所有dvi标签 优先级3*/
+
+div{
+	color:#F80;
+}
+
+/* 4.通配符选择器对应html所有标签  优先级4*/
+*{
+	color:#f40;
+}
+
+/* 5.属性选择器 */
+/*属性值*/
+[id="2"]{
+   color:#f40； 
+}
+
+/* 父子选择器/派生选择器 至右向左*/
+div span{
+    backgrond-clocr:red;
+}
+/* 直接子元素选择器 */
+div > span{
+	backgrond-clocr:red;
+}
+
+/* 并列选择器 */
+div.demo{
+	backgrond-clocr:green;
+}
+
+/* 分组选择器 公用一个代码 */
+em, .demo, dvi{
+	font-size:12px; /*设置字体大小(高) html默认16px*/
+	font-weight:bold; /* 加粗字体 */
+	font-family:; 设置字体 浏览器默认 arial
+	color:#ff4400;/*设置字体颜色reb（0～255，0，0）*/
+	/* 重要 */
+	border:;/* 设置外框 */
+
+	text-align:right;/*设置文字对齐方式*/
+}
+*/*/
+/*www.css.88.com*/
+div #div0 strong em{
+	text-align:middle;
+}
+
+
+/*伪类选择器 当鼠标移入选择器区域内才加载css*/ 
+a:hover{
+
+}
+
+
+div{
+	/*首行缩进2像素 */
+	font-size:20px;
+	text-indent:2em; 
+
+    /*文字画线*/
+	text-decoration:none;
+	
+
+	/*鼠标移到区域更改鼠标样式*/
+	cursor:help;
+
+    /*设置定位*/
+	position:absolute;
+	right: ;
+	top:;
+	bottom: ;
+
+
+
+
+}
+/*自定义标签*/
+em{
+	font-style: normal; 
+	color:#c00;
+}
+/*初始化*/
+*{
+	margin:0;
+	padding:0;
+}
+.class{
+	position:absolute;  /*设置定位方式*/
+	left: 130px;        /*值*/
+	top: 0;
+	margin-left: ;
+	margin-top:;
+	height:;
+	width:;
+}

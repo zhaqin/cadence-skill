@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+}
+/*body{
+    background-image:url("../img/arm-homepage-hero-a1.jpg");
+}*/
+.dome{
+    width: 520px;
+    height: 20px;
+    padding: 10px 7px;
+    font: 16px arial;
+    border: 1px solid #b8b8b8;
+    border-bottom: 1px solid #ccc;
+}
+.dome1{
+    width: 102px;
+    height: 42px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    cursor: default;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.href:hover{
+    color:#f2f2f2;
+    background-color:#757575; 
+}
+
+.div{
+
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:660px;
+    height:150px;
+
+    margin-left:-330px;
+    margin-top:-163px;
+    text-align:center;
+}
+.div a img{
+    width:140px;
+}

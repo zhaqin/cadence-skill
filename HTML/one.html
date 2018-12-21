@@ -1,0 +1,193 @@
+<html lang="en"><!--告诉浏览器爬虫，我们的网站是关于什么内容 SEO-->
+<head><!--给浏览器看的标签-->
+		<meta charset="UTF-8"><!--网站编码格式-->
+		<title>张强</title><!--网站页脚标头-->
+
+
+		<!-- 页面级CSS -->
+<!-- 		<style type="text/css"> 
+			#div0{
+				text-align:center;
+				width:100px; 
+				height:100px;
+				background-color:green;
+			}
+		</style> -->
+
+		<!-- 外部文件导入css href 文件地址-->
+
+		<link rel="stylesheet" type="text/css" 
+		href="../static/CSS/two.css"/>
+
+
+</head>
+<body><!--展示在网页上的标签-->
+
+	<div id="div0">
+		<strong>              		  <!-- 加粗字体 -->
+		 	<em>我的个人网站</em>      <!-- 斜体文字 -->
+		 </strong>
+
+		<p>Life is shit!!! 美好的生活</p>
+		<address>武汉软件工程学院</address>
+
+		<del>￥100</del>
+		<br><!-- 回车 -->
+        <hr><!-- 下划线 -->
+    </div>
+		
+
+		
+
+		<!--html编码符-->
+		<!-- &nbsp 空格-->
+		<!--  &lt  <号 -->
+		<!--  &gt  >号 -->
+                
+
+
+
+		<!--常用-->
+		<div id="div1"><!--管理下面各个标签-->
+
+		<samp>下面是列表</samp>
+
+		<ul><!--无序列表 只有一个参数-->
+			<li>苹果</li>
+			<li>橘子</li>
+			<li>香蕉</li>
+		</ul>
+
+		<ol type="i"><!--有序列表 1/a/A/i -->
+			<li>返老还童</li>  
+			<li>了不起的盖茨比</li>
+		</ol>
+
+		<p></p>
+
+		</div>
+
+		
+
+		<!--1.网上url
+			2.本地的绝对路径
+			3.本地的相对路径（html跟图片在一个地址）
+			<title> 图片提示符
+		-->
+  		<div id="div2">
+
+		<!--图片 src代表图片地址-->
+		<img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=964653801,3693801298&fm=27&gp=0.jpg">
+
+		<p></p> 
+		<p></p>
+
+		<a href="https://www.baidu.com/">百度</a>
+		
+		<!-- target="_blank_" 在新标签里打开链接 -->
+		<a href="#div1">跳转到标题</a><!--锚点-->
+		
+		<a href="+8615927046697">拨号</a><!--打电话-->
+		
+		<a href="www.990649132@qq.com">Emain</a><!--发邮件-->
+       
+        <!--协议限定符 插入javascript代码点击说明强制运行-->
+        <a href="javascript：while(1){"you"}">死循环</a>
+
+        </div>
+        <br>
+        <div id="div3">  
+        <!--表单 用于前后端交互数据-->
+        <!--method 发送数据的方式 action 要发送的地址-->
+		<form methond"get/post" action="地址" >
+			<!--type 输入模式txt为输入框数据值 pasword密码框 -->
+			<!--name 要发送的数据名-->
+        	用户名：<input type="txt" name="用户名" value="请输入用户名">
+        	<p></p>
+        	密码： &nbsp <input type="password" name="密码" value="zhang">
+        	<p></p>
+        	<input type="submit" name="提交输入">
+        	<p></p>
+        	<!--redio 单选择框  checkbox复选框-->
+        	<input type="redio" name="sta" value="">
+        	<!-- checked="" 默认选中-->
+        	<input type="redio" name="sta" value="">
+        	<input type="redio" name="sta" value="">
+
+        	<!--submit 提交输入 vaalue 描述说明-->md5
+        	<input type="submit" value="">
+
+        	<!--下拉菜单-->
+        	<select name="sex">
+        		<option>beijing</option>
+        	</select>
+
+        </form>
+
+		</div>
+
+		<!-- 引入css -->
+		<!-- 1.行间样式 -->
+		<div id="div4" style="CSS代码 
+			width:100px;
+			height:100px;
+			background-color:yellow;
+		">	
+		</div>
+
+
+
+		<!-- 2.页面级CSS id选择器-->
+		<div id="5">
+			
+		</div>
+
+
+
+		<!-- 3.外部css文件 class选择器-->
+		<div class="demo demo1">
+			css
+		</div>
+
+
+
+		<div>
+			<span> 父子选择器 </span>
+		</div>
+        <span> span </span>
+
+
+<!-- 
+
+        可以通过css里的display属性设置
+  		凡是带有inlin的元素都有文字属性
+
+        1.行级元素
+        feature:内容决定元素所占位置不可以通过css改变宽高
+        sapa strong em del
+
+        2.块级元素
+        feature:独占一行 可以通过css改变宽高
+        div
+        p ul li form address
+
+        3.行级块元素
+        feature:内容决定大小 可以通过css改变宽高
+        img
+        
+ -->
+
+ 任何一个盒子都符合盒子模型
+ 盒子模型
+
+ 盒子壁  border
+
+ 内边距  padding
+
+ 盒子内容  widit + hight
+
+ 外边距 margin + border + padding + （ content = widit + height ）
+
+
+</body>
+</html><!--根标签每个html文件只能有一个-->
